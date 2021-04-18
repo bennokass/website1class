@@ -11,13 +11,123 @@ output:
     self_contained: false
 ---
 
-
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
+knitr::opts_chunk$set(echo = TRUE)
+
+# Load packages
+library(tidyverse)
+library(lubridate)
+library(readxl)
+library(janitor)
+library(glue)
+library(leaflet)
+library(RColorBrewer)
+library(htmlwidgets)
+library(htmltools)
+library(tigris)
+library(tmap)
+library(tmaptools)
+options(tigris_class = "sf")
+
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web.
+### Instructions
 
-Learn more about using Distill at <https://rstudio.github.io/distill>.
+Include your code in R chunks below, along with a walkthrough explanation in text of what you're doing when answering the assignment sections below (the text can be either out here in the text portion of the RMarkdown document, or as commented lines within the chunks).
 
+You can break things up into as many separate code chunks as you feel makes sense given the task at hand. Please feel free to make use of the material and code samples we went over in last week's class to adapt to relevant scenarios below.
+
+<br>
+
+
+### Part 1
+
+-   Create a small Excel spreadsheet file that contains the name along with latitude and longitude coordinates of four DC-area landmarks of your choosing.
+
+-   Import the file into an R dataframe.
+
+-   Using Leaflet, map out the four points on a Leaflet map, and set the zoom to the appropriate level.
+
+```{r}
+
+landmark_data <- read_csv("landmark.csv")
+ 
+leaflet(data=landmark_data) %>% 
+  addTiles() %>% 
+  addMarkers(~Longitude,~Latitude,label = ~Name) 
+
+
+
+
+```
+
+
+
+### Part 2
+
+-   The NYT's publicly accessible covid case/death data by state is imported for you below into the dataframe `covid`. It contains a cumulative daily count of the total cases and deaths in a state as of each date.
+
+-   The polygon boundaries of U.S. states and territories are included below as `states`.
+
+-   Using the provided data, first filter the covid records to only include Feb. 22, 2021 - the day the U.S. crossed the half-a-million-deaths mark.
+
+-   Once you have isolated just Feb. 22's total `deaths` for every state, create a choropleth map (i.e. a shaded polygon map) that shows which states had more deaths as of Feb. 22 compared with others. Use either the Leaflet or Tmap package to do this.
+
+```{r}
+
+#import the NYT's covid case data for states
+covidcases <- read_csv("https://raw.githubusercontent.com/nytimes/covid-19-data/master/us-states.csv")
+
+#Download the polygon boundaries for states at the lowest resolution using tigris package
+states <- tigris::states(cb=T)
+
+feb22 <- covidcases %>%
+  filter(date==mdy("2/22/21")) 
+states2 <- states %>% 
+    inner_join(feb22,by=c("NAME"="state"))
+
+  
+
+palette <- colorBin("YlOrRd",domain = states2$deaths)
+leaflet(states2) %>% 
+  addPolygons(
+    fillColor = ~palette(deaths)
+    
+    
+  )
+
+```
+
+
+
+### Part 3
+
+-   A sample of Sacramento, Calif. real estate transactions are imported below for you into a dataframe called `sac_sales`.
+
+-   First, take out any condo or multi-family dwellings so the `type` includes only residential sales.
+
+-   Then, using either Leaflet or Tmap, create a map that shows the locations of the sales as dots on the map, with the size of the points based on the `price` the home sold for.
+
+```{r}
+#your code here
+
+sac_sales <- read_csv("https://support.spatialkey.com/wp-content/uploads/2021/02/Sacramentorealestatetransactions.csv")
+
+
+residential_sales <- sac_sales %>% 
+  filter(type=="Residential")
+
+leaflet(residential_sales) %>% 
+  addTiles() %>% 
+  addCircleMarkers(
+    lng = ~longitude,
+    lat = ~latitude,
+    radius = ~price,
+    
+    
+  )
+
+```
+
+```
 
