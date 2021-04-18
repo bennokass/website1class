@@ -1,0 +1,206 @@
+---
+title: "assignment1"
+description: |
+  A short description of the post.
+author:
+  - name: Benno Kass
+    url: https://example.com/norajones
+date: 04-18-2021
+output:
+  distill::distill_article:
+    self_contained: false
+---
+
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+
+#first load the libraries we'll need
+library(tidyverse)
+library(plotly)
+library(nycflights13) # <- make sure to install this package 
+
+
+```
+
+## Functions
+
+1. Create a function that will return the sum of 2 numbers.
+
+```{r}
+
+add <- function(a,b){
+  return(a+b)
+}
+
+add (3,2)
+
+
+```
+
+
+2. Create a function that will return the mean of a vector of numbers fed to it.  
+A sample vector of values is provide here to help.
+
+```{r}
+
+mynumbers <- sample(1:100, 10)
+
+mymean <- function(vec){
+  return(mean(vec))
+}
+
+mymean(mynumbers)
+
+```
+
+
+3. Now, expand on the function you made above, and instead of just returning the number, have it return the sentence:  
+"The mean is ___" where the blank is the calculated result.
+
+```{r}
+
+mymean <- function(vec){
+  return(paste("The mean is", mean(vec)))
+}
+
+mymean(mynumbers)
+
+
+
+```
+
+
+```{r}
+#load the data to use for the rest of the assignment questions
+flights <- nycflights13::flights
+
+```
+
+4. Using the `flights` dataset from the package `nycflights13` loaded in the above cell, create a function that filters the data frame to only include records from a single originating airport (column name `origin`).
+
+```{r}
+
+filterairport <- function(df,airport){
+  return(df[df$origin==airport,])
+}
+
+flights %>% filterairport("EWR")
+
+
+
+
+
+```
+
+
+5. Similarly, using the `flights` dataset, create a function that:  
+- filters the data frame to only include records from a single originating airport (column name `origin`), and then  
+- aggregates the results by airline (`carrier`) to show how many flights each airline has from that airport.
+
+```{r}
+
+
+getnumflightsforairport <- function(df,airport){
+  return(df[df$origin==airport,] %>% group_by(carrier) %>% count())
+}
+
+flights %>% getnumflightsforairport("EWR")
+
+
+
+
+
+
+
+```
+
+
+6. Similarly, using the `flights` dataset, create a function that:  
+- filters the data frame to only include records from a single originating airport (column name `origin`), and then  
+- filter to only include flights longer than a specific number of minutes (`air_time`), and then  
+- aggregates the results by airline (`carrier`) to show how many flights of that length each airline has from that airport.
+
+```{r}
+
+
+
+getnumflightsforairportlongerthantime <- function(df,airport,time){
+  return(df[df$origin==airport,] %>% filter(air_time>time) %>%  group_by(carrier) %>% count())
+}
+
+flights %>% getnumflightsforairportlongerthantime("EWR",124)
+
+
+
+
+```
+
+
+
+## Plotly charts
+
+7. Using the `flights` dataset, use plotly to create a bar chart showing the breakdown of flights by airline that originate
+from JFK airport (`origin`) and are more than 400 minutes in length (`air_time`).
+
+```{r}
+
+result <- flights %>% getnumflightsforairportlongerthantime("JFK",400)
+
+plot_ly(
+  x=result$carrier,
+  y=result$n,
+  name="JFK flight",
+  type="bar"
+)
+
+
+
+
+```
+
+
+8. Using the `flights` dataset, use plotly to create a bar chart showing which destination airports (`dest`) have the most
+flights with durations of over 400 minutes (`air_time`).
+
+```{r}
+results <- flights %>% filter(air_time>400) %>% group_by(dest) %>% count()
+plot_ly(
+  x=results$dest,
+  y=results$n,
+  type="bar",
+)
+
+
+
+
+
+```
+
+
+9. Using the `flights` dataset, use plotly to create a donut chart showing the share of flights each airline has for 
+flights with a destination of Daniel K. Inouye International Airport (HNL) in Honolulu.
+
+```{r}
+results<-flights %>% filter(dest=="HNL") %>% group_by(carrier) %>% count()
+results %>% plot_ly(labels=~carrier,values=~n) %>% add_pie(hole=0.6)
+
+
+
+
+
+```
+
+
+10. Using the `flights` dataset, use plotly to create a scatterplot chart for flights with a destination of 
+Daniel K. Inouye International Airport (HNL) in Honolulu, that shows the relationship between the departure delay (`dep_delay`) and arrival delay (`arr_delay`).
+
+```{r}
+results <- flights %>% filter(dest=="HNL")
+
+results %>% plot_ly(x=~dep_delay,y=~arr_delay)
+
+
+
+```
+
