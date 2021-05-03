@@ -9,4 +9,12 @@ navbar:
       href: index.html
     - text: "About"
       href: about.html
+    - text: "Work Samples"
+      menu: 
+        - text: "sample #1"
+          href: sample1.html
+    - text: "Experience"
+      href: Resume.html
+    - text: "Skills"
+      href: skills.html
 output: distill::distill_article
