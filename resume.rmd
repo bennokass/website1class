@@ -1,53 +1,59 @@
 ---
 title: "Experience "
 description: |
-  A new article created using the Distill format.
-author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
+  A selection of my previous experience.
+
 date: "`r Sys.Date()`"
 output: distill::distill_article
 ---
 
 
-BBDO
-Account Management Intern
-• Assisted in the roll-out of Foot Locker’s “Week of Greatness” campaign featuring a spot with P.J. Tucker, Pia Mia, and
-JD McCrary by generating solutions, performing research, organizing travel, and recommending talent.
-• Represented the Foot Locker team in recurring internal PR meetings by sharing past and current campaigns.
-• Delivered and presented competitive analysis reports highlighting Foot Locker’s key market competitors and a research
-report into the global sneakerhead market in each primary worldwide market for Foot Locker.
-• Member of the winning team of the Dunkin’ intern competition creating a compelling campaign to executives, rooted in
-targeted market segmentation tools such as MRI-Simmons, that showcased a simple yet effective creative execution.
-LONG ISLAND RADIO BROADCASTING COMPANY Watermill, New York Paid Intern August 2016
-• Helped the marketing team target communications to a younger audience by creating an Instagram marketing strategy,
+<b>BBDO June-July 2018 
+Account Management Intern</b>
+
+* Assisted in the roll-out of Foot Locker’s “Week of Greatness” campaign featuring a spot with P.J. Tucker, Pia Mia, and JD McCrary by generating solutions, performing research, organizing travel, and recommending talent.
+
+* Represented the Foot Locker team in recurring internal PR meetings by sharing past and current campaigns.
+
+* Delivered and presented competitive analysis reports highlighting Foot Locker’s key market competitors and a research report into the global sneakerhead market in each primary worldwide market for Foot Locker.
+
+* Member of the winning team of the Dunkin’ intern competition creating a compelling campaign to executives, rooted in targeted market segmentation tools such as MRI-Simmons, that showcased a simple yet effective creative execution.
+
+
+<b>LONG ISLAND RADIO BROADCASTING COMPANY Watermill, New York Paid Intern August 2016</b>
+
+* Helped the marketing team target communications to a younger audience by creating an Instagram marketing strategy,
 which quickly gained over 2000 followers and a high audience engagement after the initial launch.
-• Worked out of the studio and headquarters of their three stations 92.9 WEHM, 101.7 The Beach, and 102.5 WBAZ.
-• Helped brainstorm new ideas at the weekly programming and promotion meetings.
-• Utilized Adobe Audition and ENCO to assist the production team in creating commercial spots on the three FM
+
+* Worked out of the studio and headquarters of their three stations 92.9 WEHM, 101.7 The Beach, and 102.5 WBAZ.
+
+* Helped brainstorm new ideas at the weekly programming and promotion meetings.
+
+* Utilized Adobe Audition and ENCO to assist the production team in creating commercial spots on the three FM
 channels.
-ROBERTS+LANGER (R+L) New York, New York Paid Intern– Account & Creative Departments June - July 2016
-• Assisted the account and creative team for Neutrogena in rolling out their new “Therapy Light Mask”, by providing a
-unique youth perspective on the audience of 16-18 year olds in meetings with Neutrogena executives, celebrity
+
+
+<b>ROBERTS+LANGER (R+L) New York, New York Paid Intern– Account & Creative Departments June - July 2016</b>
+
+* Assisted the account and creative team for Neutrogena in rolling out their new “Therapy Light Mask”, by providing a unique youth perspective on the audience of 16-18 year olds in meetings with Neutrogena executives, celebrity
 endorsers, and the research and development team.
-• Created competitive review decks on behalf of R+L to share with Aveeno and Neutrogena executives.
-• Planned Instagram posts for Aveeno’s fall product line and brainstormed ideas for content that were eventually featured
-on the official Aveeno Instagram account.
-PETER J. COHEN COLLECTION New York, New York Website Designer & Developer May 2014 - September 2017 • Designed and created the pjcohencollection.com website, which features a gallery of vernacular photographs, a
-bookstore, and information on current museum exhibitions to further expose the collection to museums and art curators. • Archived, curated, and scanned photos for the website, from the Peter J. Cohen collection, from which pieces have been
-featured in the Metropolitan Museum of Art, MoMa, and the Art Institute of Chicago among others.
+
+* Created competitive review decks on behalf of R+L to share with Aveeno and Neutrogena executives.
+
+* Planned Instagram posts for Aveeno’s fall product line and brainstormed ideas for content that were eventually featured on the official Aveeno Instagram account.
+
+
+<b>PETER J. COHEN COLLECTION New York, New York Website Designer & Developer May 2014 - September 2017 </b>
+
+* Designed and created the pjcohencollection.com website, which features a gallery of vernacular photographs, a
+bookstore, and information on current museum exhibitions to further expose the collection to museums and art curators.
+
+* Archived, curated, and scanned photos for the website, from the Peter J. Cohen collection, from which pieces have been featured in the Metropolitan Museum of Art, MoMa, and the Art Institute of Chicago among others.
 
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
-
-Distill is a publication format for scientific and technical writing, native to the web. 
-
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
-
 
 
 

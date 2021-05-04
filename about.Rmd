@@ -1,7 +1,7 @@
 ---
 title: "About this website for class"
 description: |
-  Hi my name is Benno and I am a journalism minor at the GW School of Media and Public Affairs. Interstingly, I have little interest in becoming a journalist as a career, but nonetheless I have enjoyed the subject and the way it has made me think about the world and writing. The most recent class I took, Reporting in a Digital Age is really interesting. 
+  Hi my name is Benno and I am a journalism minor at the GW School of Media and Public Affairs. Interstingly, I have little interest in becoming a journalist as a career, but nonetheless I have enjoyed the subject and the way it has made me think about the world and writing. The most recent class I took, Reporting in a Digital Age is really interesting as it combines data, technology, and journalism.
 ---
 
 ```{r setup, include=FALSE}

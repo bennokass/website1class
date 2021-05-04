@@ -86,26 +86,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Benno's Website: website1</title>
+  <title>Benno's Website: Social Media Password Editorial</title>
+
+  <meta property="description" itemprop="description" content="An editorial about Password Sharing Legislation with Your Employer"/>
 
 
-
+  <meta name="article:author" content="Benno Kass"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Benno&#39;s Website: website1"/>
+  <meta property="og:title" content="Benno&#39;s Website: Social Media Password Editorial"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="An editorial about Password Sharing Legislation with Your Employer"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Benno&#39;s Website"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Benno&#39;s Website: website1"/>
+  <meta property="twitter:title" content="Benno&#39;s Website: Social Media Password Editorial"/>
+  <meta property="twitter:description" content="An editorial about Password Sharing Legislation with Your Employer"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["website1"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","output"]}},"value":[{"type":"character","attributes":{},"value":["Social Media Password Editorial"]},{"type":"character","attributes":{},"value":["An editorial about Password Sharing Legislation with Your Employer\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Benno Kass"]},{"type":"NULL"},{"type":"character","attributes":{},"value":["GW"]},{"type":"NULL"}]}]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2045,12 +2049,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"website1","authors":[]}
+{"title":"Social Media Password Editorial","description":"An editorial about Password Sharing Legislation with Your Employer","authors":[{"author":"Benno Kass","authorURL":"#","affiliation":"GW","affiliationURL":"#","orcidID":""}]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2088,209 +2092,35 @@ Work Samples
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="website1">website1</h1>
-<a href="posts/2021-04-18-assignment1/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Benno Kass</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>assignment1</h2>
-<div class="dt-tags"></div>
-<p>A short description of the post.</p>
-</div>
-</a>
-<a href="posts/2021-04-18-assignment2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Nora Jones</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>assignment2</h2>
-<div class="dt-tags"></div>
-<p>This is a run through my second assignment</p>
-</div>
-</a>
-<a href="posts/welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Nora Jones</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Welcome to website1</h2>
-<div class="dt-tags"></div>
-<p>Welcome to our new blog, website1. We hope you enjoy 
-reading what we have to say!</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>website1</h1>
+<h1>Social Media Password Editorial</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
+<p><p>An editorial about Password Sharing Legislation with Your Employer</p></p>
+</div>
+
+<div class="d-byline">
+  Benno Kass  (GW)
+  
 
 </div>
 
-
 <div class="d-article">
+<p>Would you let your employer into your social media account? Some lawmakers are arguing that employers should not be able to demand passwords from employees. The new legislation, protecting social media users from intrusive employers, is sweeping state legislatures, with New York State next on the list. The law would prevent employers from asking applicants to divulge their social media passwords. We hope the governor will sign the bill.</p>
+<p>The new legislation, which will be on Governor Andrew Cuomo’s desk this year, is one of the first pieces of legislation tailored to the modern era.</p>
+<p>People’s most intimate details are not just in their homes; they now also live in the cloud. The digital passkey safeguarding those accounts should be sacred, and Americans should never feel compelled to share those with the government or their employer.</p>
+<p>How would you respond if an employer asked for a copy of the keys to your apartment? You’d probably tell them to buzz off. This is essentially what’s happening here. After an employee gives an employer their password, they can waltz in and out of their account without worry.</p>
+<p>There is a reason security experts strongly urge people to keep their passwords to themselves. Your password could be connected to banks, email, and even your house webcam portals.</p>
+<p>The sacred right of conducting personal affairs outside of the workplace is also special. Individuals’ ability to have a line between work and home is also infringed when employers have social media passwords.</p>
+<p>Some critics of employee social media password regulations say that it infringes on employers’ rights to conduct due diligence on potential employees. Critics do not understand the individual’s civil liberties, which should always come first when understanding the nuances of privacy, especially when the privacy at risk is as personal as your social media account.</p>
+<p>Social media accounts harbor tons of information that’s not just public. Many social media sites have entirely private messengers. Facebook even touts that its messenger “end-to-end encrypted,” that is, if you aren’t compelled to give your password up to your boss anytime soon. Social media users never thought anyone, nonetheless their potential employer, would read their private messages.</p>
+<p>One might guess during this time that no one has the free speech granted by the first amendment if employers are actively snooping on social media accounts. Where should people talk if they don’t want their boss to eavesdrop? Perhaps a dingy underground parking lot or a desolate island without cell reception. Americans need lawmakers to extend the spirit of the first amendment to social media privacy because it our most recent speech mechanism.</p>
+<p>COVID-19 has sheltered the entire world in their homes during the last year, which has virtually shifted almost all conversations. Your work meeting, workout, kids class, and even religious service were likely virtual. The biggest virtual portals where individuals congregate online are mostly controlled by a handful of big companies, including Google, Facebook, and Twitter. This consolidation makes it even more problematic for an individual to give up their password to an employer because it is their digital identity (which, by the way, is pretty much all we have these days).</p>
+<p>Imagine giving an employer access to an employee’s Zoom account. Employers would have access and could eavesdrop on personal religious confessionals and therapy sessions.</p>
+<p>Individuals have placed their future in the hands of their social media accounts, and they might not even know it. People never knew in their previous use of social media that their account could be rummaged through by anyone. Those accounts’ contents should only be responsible to the account holder, just as with a bank account or apartment building.</p>
+<p>The New York legislation is coming nearly eight years after California first passed the groundbreaking law. The proposed legislation protects New York employees and students from ever being forced to give their passwords up again. The passage of this legislation would do a great deal to help social media users’ privacy rights, but there is more work to be done.</p>
+<p>Social media sites often sell users’ private data to advertisers, albeit anonymously, which can sometimes infringe on the user’s rights. Some users have reported that they unknowingly were sharing their location services with the social media companies, which was then being sent to advertisers. Social media companies need to start working for the individual, their supposed core customer base if they want to stay away from public scrutiny and possible harsh legislation down the road.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

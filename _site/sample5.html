@@ -86,26 +86,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Benno's Website: website1</title>
+  <title>Benno's Website: Former UN Ambassador Haley on her relationship with President Trump: “I challenged him…not in public but in private.”</title>
+
+  <meta property="description" itemprop="description" content="An article written in 2018 about Former UN Ambassador Haley with then President Trump"/>
 
 
-
+  <meta name="article:author" content="Benno Kass"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Benno&#39;s Website: website1"/>
+  <meta property="og:title" content="Benno&#39;s Website: Former UN Ambassador Haley on her relationship with President Trump: “I challenged him…not in public but in private.”"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="An article written in 2018 about Former UN Ambassador Haley with then President Trump"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Benno&#39;s Website"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Benno&#39;s Website: website1"/>
+  <meta property="twitter:title" content="Benno&#39;s Website: Former UN Ambassador Haley on her relationship with President Trump: “I challenged him…not in public but in private.”"/>
+  <meta property="twitter:description" content="An article written in 2018 about Former UN Ambassador Haley with then President Trump"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["website1"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","output"]}},"value":[{"type":"character","attributes":{},"value":["Former UN Ambassador Haley on her relationship with President Trump: “I challenged him…not in public but in private.”"]},{"type":"character","attributes":{},"value":["An article written in 2018 about Former UN Ambassador Haley with then President Trump\n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Benno Kass"]},{"type":"NULL"},{"type":"character","attributes":{},"value":["GW"]},{"type":"NULL"}]}]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2045,12 +2049,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"website1","authors":[]}
+{"title":"Former UN Ambassador Haley on her relationship with President Trump: “I challenged him…not in public but in private.”","description":"An article written in 2018 about Former UN Ambassador Haley with then President Trump","authors":[{"author":"Benno Kass","authorURL":"#","affiliation":"GW","affiliationURL":"#","orcidID":""}]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2088,209 +2092,35 @@ Work Samples
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="website1">website1</h1>
-<a href="posts/2021-04-18-assignment1/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Benno Kass</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>assignment1</h2>
-<div class="dt-tags"></div>
-<p>A short description of the post.</p>
-</div>
-</a>
-<a href="posts/2021-04-18-assignment2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Nora Jones</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>assignment2</h2>
-<div class="dt-tags"></div>
-<p>This is a run through my second assignment</p>
-</div>
-</a>
-<a href="posts/welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Nora Jones</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Welcome to website1</h2>
-<div class="dt-tags"></div>
-<p>Welcome to our new blog, website1. We hope you enjoy 
-reading what we have to say!</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>website1</h1>
+<h1>Former UN Ambassador Haley on her relationship with President Trump: “I challenged him…not in public but in private.”</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
+<p><p>An article written in 2018 about Former UN Ambassador Haley with then President Trump</p></p>
+</div>
+
+<div class="d-byline">
+  Benno Kass  (GW)
+  
 
 </div>
 
-
 <div class="d-article">
+<p>Nikki Haley, former U.S. Ambassador to the United Nations, addressed her relationship with President Trump and the U.S. relationship with Israel, among other foreign policy matters, in a talk Tuesday, March 6, at Temple Emanu-El Synagogue in New York.</p>
+<p>Haley told an audience of more than three hundred people that she “challenged him…not in public but in private” during her two year tenure from early 2017 to the end of 2018. She did not specify the issues on which she challenged Trump. Haley did concede that she “made a point of not doing anything he would not want me to do.”</p>
+<p>Haley previously served as governor of South Carolina from 2011 until joining the Trump cabinet. She said that one of her conditions of taking the job was that Trump designate the role of U.S. ambassador to the U.N. as a cabinet-level position. Haley said that she told then President-elect Trump that she “won’t be a wallflower or a talking head.”</p>
+<p>In describing her time as ambassador, she said “it was a great relationship” and “he did not micromanage me.”</p>
+<p>Haley made the remarks in conversation with the United Jewish Appeal (UJA) organization CEO Eric Goldstein. The audience included members of the UJA or congregants of Temple Emanu-El, a reform synagogue on Manhattans Upper East Side.</p>
+<p>Before the talk head Rabbi Josh Davidson of Temple Emanu-El told us “the U.N. has been less than even-handed with its treatment of Israel.” Davidson’s congregation boasts many New York members from former Mayor Michael Bloomberg to the late Joan Rivers.</p>
+<p>Haley staunchly defended Israel during the talk, telling the audience “The United States failed our friend [Israel] when they needed us most.”</p>
+<p>“The United States didn’t just abstain, they led the charge on this…What does this say to the rest of the world when we do this to one of our friends.”</p>
+<p>She was referring to the 2016 U.N. Security Council Resolution 2334 which claimed the Israeli settlements in the West Bank including East Jerusalem were a “flagrant violation of international law.” The United States chose to abstain from voting even though they have veto power on the committee.</p>
+<p>Haley gave insight on the upcoming peace plan created by White House adviser and son-in-law of the president Jared Kushner. She characterized it as “incredibly thought out and detailed” but that neither side will be entirely happy with what they see. “They will both have to give,” she warned.</p>
+<p>Ambassador Haley also spoke with candor about the October 2018 murder of Washington Post columnist Jamal Khashoggi at the hands of Saudi Arabian agents at the Saudi consulate in Istanbul, Turkey. “MBS is ultimately responsible for Khashoggi’s murder,” referring to the Crown Prince of Saudi Arabia, Mohammad Bin Salman.</p>
+<p>Haley said that while some believe the Trump administration did not hold the Saudis to account, “The United States put unbelievable pressure on Saudi Arabia behind closed doors.”</p>
+<p>When Haley spoke about her most significant achievement, she cited, “The three sanction packages against North Korea” and the “first ever arms embargo against South Sudan.”</p>
+<p>Haley had little criticism for her former boss, but did break with him perhaps by offering some blunt talk on Russia. “We will never be able to trust Russia, ever…they make friends with the countries no one wants to be friends with.”</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

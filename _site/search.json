@@ -3,59 +3,112 @@
     {
       "path": "about.html",
       "title": "About this website for class",
-      "description": "Hi my name is Benno and I am a journalism minor at the GW School of Media and Public Affairs. Interstingly, I have little interest in becoming a journalist as a career, but nonetheless I have enjoyed the subject and the way it has made me think about the world and writing. The most recent class I took, Reporting in a Digital Age is really interesting. ",
+      "description": "Hi my name is Benno and I am a journalism minor at the GW School of Media and Public Affairs. Interstingly, I have little interest in becoming a journalist as a career, but nonetheless I have enjoyed the subject and the way it has made me think about the world and writing. The most recent class I took, Reporting in a Digital Age is really interesting as it combines data, technology, and journalism.",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-05-02T11:49:02-04:00"
+      "last_modified": "2021-05-04T00:04:04-04:00"
     },
     {
       "path": "index.html",
       "title": "website1",
       "author": [],
       "contents": "\n\n\n\n",
-      "last_modified": "2021-05-02T11:49:02-04:00"
+      "last_modified": "2021-05-04T00:02:27-04:00"
     },
     {
       "path": "resume.html",
       "title": "Experience ",
-      "description": "A new article created using the Distill format.\n",
-      "author": [
-        {
-          "name": "Nora Jones",
-          "url": "https://example.com/norajones"
-        }
-      ],
+      "description": "A selection of my previous experience.\n",
+      "author": [],
       "date": "`r Sys.Date()`",
-      "contents": "\nBBDO Account Management Intern • Assisted in the roll-out of Foot Locker’s “Week of Greatness” campaign featuring a spot with P.J. Tucker, Pia Mia, and JD McCrary by generating solutions, performing research, organizing travel, and recommending talent. • Represented the Foot Locker team in recurring internal PR meetings by sharing past and current campaigns. • Delivered and presented competitive analysis reports highlighting Foot Locker’s key market competitors and a research report into the global sneakerhead market in each primary worldwide market for Foot Locker. • Member of the winning team of the Dunkin’ intern competition creating a compelling campaign to executives, rooted in targeted market segmentation tools such as MRI-Simmons, that showcased a simple yet effective creative execution. LONG ISLAND RADIO BROADCASTING COMPANY Watermill, New York Paid Intern August 2016 • Helped the marketing team target communications to a younger audience by creating an Instagram marketing strategy, which quickly gained over 2000 followers and a high audience engagement after the initial launch. • Worked out of the studio and headquarters of their three stations 92.9 WEHM, 101.7 The Beach, and 102.5 WBAZ. • Helped brainstorm new ideas at the weekly programming and promotion meetings. • Utilized Adobe Audition and ENCO to assist the production team in creating commercial spots on the three FM channels. ROBERTS+LANGER (R+L) New York, New York Paid Intern– Account & Creative Departments June - July 2016 • Assisted the account and creative team for Neutrogena in rolling out their new “Therapy Light Mask”, by providing a unique youth perspective on the audience of 16-18 year olds in meetings with Neutrogena executives, celebrity endorsers, and the research and development team. • Created competitive review decks on behalf of R+L to share with Aveeno and Neutrogena executives. • Planned Instagram posts for Aveeno’s fall product line and brainstormed ideas for content that were eventually featured on the official Aveeno Instagram account. PETER J. COHEN COLLECTION New York, New York Website Designer & Developer May 2014 - September 2017 • Designed and created the pjcohencollection.com website, which features a gallery of vernacular photographs, a bookstore, and information on current museum exhibitions to further expose the collection to museums and art curators. • Archived, curated, and scanned photos for the website, from the Peter J. Cohen collection, from which pieces have been featured in the Metropolitan Museum of Art, MoMa, and the Art Institute of Chicago among others.\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-02T11:49:03-04:00"
+      "contents": "\nBBDO June-July 2018 Account Management Intern\nAssisted in the roll-out of Foot Locker’s “Week of Greatness” campaign featuring a spot with P.J. Tucker, Pia Mia, and JD McCrary by generating solutions, performing research, organizing travel, and recommending talent.\nRepresented the Foot Locker team in recurring internal PR meetings by sharing past and current campaigns.\nDelivered and presented competitive analysis reports highlighting Foot Locker’s key market competitors and a research report into the global sneakerhead market in each primary worldwide market for Foot Locker.\nMember of the winning team of the Dunkin’ intern competition creating a compelling campaign to executives, rooted in targeted market segmentation tools such as MRI-Simmons, that showcased a simple yet effective creative execution.\nLONG ISLAND RADIO BROADCASTING COMPANY Watermill, New York Paid Intern August 2016\nHelped the marketing team target communications to a younger audience by creating an Instagram marketing strategy, which quickly gained over 2000 followers and a high audience engagement after the initial launch.\nWorked out of the studio and headquarters of their three stations 92.9 WEHM, 101.7 The Beach, and 102.5 WBAZ.\nHelped brainstorm new ideas at the weekly programming and promotion meetings.\nUtilized Adobe Audition and ENCO to assist the production team in creating commercial spots on the three FM channels.\nROBERTS+LANGER (R+L) New York, New York Paid Intern– Account & Creative Departments June - July 2016\nAssisted the account and creative team for Neutrogena in rolling out their new “Therapy Light Mask”, by providing a unique youth perspective on the audience of 16-18 year olds in meetings with Neutrogena executives, celebrity endorsers, and the research and development team.\nCreated competitive review decks on behalf of R+L to share with Aveeno and Neutrogena executives.\nPlanned Instagram posts for Aveeno’s fall product line and brainstormed ideas for content that were eventually featured on the official Aveeno Instagram account.\nPETER J. COHEN COLLECTION New York, New York Website Designer & Developer May 2014 - September 2017 \nDesigned and created the pjcohencollection.com website, which features a gallery of vernacular photographs, a bookstore, and information on current museum exhibitions to further expose the collection to museums and art curators.\nArchived, curated, and scanned photos for the website, from the Peter J. Cohen collection, from which pieces have been featured in the Metropolitan Museum of Art, MoMa, and the Art Institute of Chicago among others.\n\n\n\n",
+      "last_modified": "2021-05-04T00:02:28-04:00"
     },
     {
       "path": "sample1.html",
-      "title": "Sample1",
-      "description": "A new article created using the Distill format.\n",
+      "title": "Universal Basic Income for Dogs",
+      "description": "A humorous editorial \n",
       "author": [
         {
-          "name": "Nora Jones",
-          "url": "https://example.com/norajones"
+          "name": "Benno Kass",
+          "url": {}
         }
       ],
-      "date": "`r Sys.Date()`",
-      "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-03T11:05:06-04:00"
+      "contents": "\nAmid the current craze of stimulus checks, first implemented by former President Trump and carried through by current President Biden, our canine friends have been left out of the discussion. Why shouldn’t these dog caregivers get the same respect and fiscal largess during these troubling times as their human counterparts? Shouldn’t compassionate humans and our political leadership in Congress be able to squeeze out a billion dollars inside of the trillions of dollars of Covid support programs to support our canine heroes? A hundred dollars per month for each dog in the U.S. would provide for better food and healthcare until this Pandemic is over and would go a long way to showing the proper respect for these dogs’ powerful roles in helping to maintain human mental health. Let’s call it the “Bark Better Bill” and enact it as soon as possible. These funds could be distributed through Petco and Chewy in the form of credits available to each dog’s owner, and this would ensure that this vital support program reaches its target—dogs rather than their owners. Dogs will bark with joy from the apartments of New York to the open skies of Montana once they are included in the “stimmy checks.”\nPlease show us the money; during this bipartisan spending spree, our left-out furry friends are in need of new toys and extra scrumptious food. Budgets and fiscal responsibility clearly do not matter anymore to either party, and if we are going to take care of everyone, we should include our furry friends who do so much for us.\n\n\n\n",
+      "last_modified": "2021-05-04T00:02:29-04:00"
+    },
+    {
+      "path": "sample2.html",
+      "title": "Midtown Shattered",
+      "description": "A neighborhood under attack\n",
+      "author": [
+        {
+          "name": "Benno Kass",
+          "url": {}
+        }
+      ],
+      "contents": "\nThe culture, in Midtown Manhattan, is on life support. Countless businesses have been forced to close their doors as Coronavirus forced lockdowns and social distancing regulations which crippled businesses in the City that Never Sleeps.\nMidtown, is predominantly office buildings which are in large part shut down as things have not returned to a complete normal yet. When the Coronavirus arrived, restaurants like Gabriels Bar and Restaurant saw a nearly 90% decline in traffic. Reductions like these, make running a restaurant nearly impossible.\nOne way restaurants were helped is by the PPP Loan program which granted fully refundable loans to businesses suffering from the pandemic. Restaurants, which did not close, have used those funds to keep open and continue to pay their workers.\nGabriels Bar and Restaurant, located on Central Park South in New York City, took the time during the pandemic to renovate their location in order to be ready when businesses open back up. Gabriels has been open for over thirty years making it a favorite spot for businesspeople, actors/actresses, and New Yorkers alike. One big draw of Gabriels is the atmosphere, which has always been packed and filled with life. Instead of staying open during the pandemic, Gabriels has opted to reconstruct their restaurant, with some touches of our new normal, such as hand sanitizer stations throughout. Gabriels Co-Owner Gabe Aiello says that he believes the restaurant will be busier than ever once they open because people have a “pent up demand.”\nGabriel’s is lucky, even though they had to close down during the last year so many restaurants in the neighborhood have been forced to close their doors. Restaurants that have closed for good are the 21 Club, Eisenberg’s, Esca, Ethos, Foley’s, Hakkasan, Jameson’s, Le Colonial, Rosa Mexicano, Monkey Bar. The 21 Club, for instance, opened its doors in 1922, weathering many storms from the Great Depression, to World War II, to 9/11. The COVID pandemic of 2020, however, the pandemic shut their doors just before their centennial.\nThe longterm effects for the neighborhood are unknown. Some businesses have moved completely out of New York City such as Goldman Sacks, which is relocating to Florida. Also some workers have noted that working from home may be a longterm solution, as people become comfortable with working virtually from home.\nThe future is looking better though, for the few restaurants and restauranteurs fortunate enough to still be in business. The COVID-19 vaccine is being rolled out throughout the world and will hopefully allow restaurants to open back up—even at full capacity. The vaccine rollout has been especially successful in New York City with a rate of nearly 40% fully vaccinated. The COVID Vaccine is a sign of normalcy, in an age where we desperately need it.\nWhen the pandemic is in the past, restaurants will thrive again and the city will be back—but not the same. The storied institutions that have closed or are heavily bruised will always be missed and remembered by New Yorkers and visitors alike.\n\n\n\n",
+      "last_modified": "2021-05-04T00:02:29-04:00"
+    },
+    {
+      "path": "sample3.html",
+      "title": "Social Media Password Editorial",
+      "description": "An editorial about Password Sharing Legislation with Your Employer\n",
+      "author": [
+        {
+          "name": "Benno Kass",
+          "url": {}
+        }
+      ],
+      "contents": "\nWould you let your employer into your social media account? Some lawmakers are arguing that employers should not be able to demand passwords from employees. The new legislation, protecting social media users from intrusive employers, is sweeping state legislatures, with New York State next on the list. The law would prevent employers from asking applicants to divulge their social media passwords. We hope the governor will sign the bill.\nThe new legislation, which will be on Governor Andrew Cuomo’s desk this year, is one of the first pieces of legislation tailored to the modern era.\nPeople’s most intimate details are not just in their homes; they now also live in the cloud. The digital passkey safeguarding those accounts should be sacred, and Americans should never feel compelled to share those with the government or their employer.\nHow would you respond if an employer asked for a copy of the keys to your apartment? You’d probably tell them to buzz off. This is essentially what’s happening here. After an employee gives an employer their password, they can waltz in and out of their account without worry.\nThere is a reason security experts strongly urge people to keep their passwords to themselves. Your password could be connected to banks, email, and even your house webcam portals.\nThe sacred right of conducting personal affairs outside of the workplace is also special. Individuals’ ability to have a line between work and home is also infringed when employers have social media passwords.\nSome critics of employee social media password regulations say that it infringes on employers’ rights to conduct due diligence on potential employees. Critics do not understand the individual’s civil liberties, which should always come first when understanding the nuances of privacy, especially when the privacy at risk is as personal as your social media account.\nSocial media accounts harbor tons of information that’s not just public. Many social media sites have entirely private messengers. Facebook even touts that its messenger “end-to-end encrypted,” that is, if you aren’t compelled to give your password up to your boss anytime soon. Social media users never thought anyone, nonetheless their potential employer, would read their private messages.\nOne might guess during this time that no one has the free speech granted by the first amendment if employers are actively snooping on social media accounts. Where should people talk if they don’t want their boss to eavesdrop? Perhaps a dingy underground parking lot or a desolate island without cell reception. Americans need lawmakers to extend the spirit of the first amendment to social media privacy because it our most recent speech mechanism.\nCOVID-19 has sheltered the entire world in their homes during the last year, which has virtually shifted almost all conversations. Your work meeting, workout, kids class, and even religious service were likely virtual. The biggest virtual portals where individuals congregate online are mostly controlled by a handful of big companies, including Google, Facebook, and Twitter. This consolidation makes it even more problematic for an individual to give up their password to an employer because it is their digital identity (which, by the way, is pretty much all we have these days).\nImagine giving an employer access to an employee’s Zoom account. Employers would have access and could eavesdrop on personal religious confessionals and therapy sessions.\nIndividuals have placed their future in the hands of their social media accounts, and they might not even know it. People never knew in their previous use of social media that their account could be rummaged through by anyone. Those accounts’ contents should only be responsible to the account holder, just as with a bank account or apartment building.\nThe New York legislation is coming nearly eight years after California first passed the groundbreaking law. The proposed legislation protects New York employees and students from ever being forced to give their passwords up again. The passage of this legislation would do a great deal to help social media users’ privacy rights, but there is more work to be done.\nSocial media sites often sell users’ private data to advertisers, albeit anonymously, which can sometimes infringe on the user’s rights. Some users have reported that they unknowingly were sharing their location services with the social media companies, which was then being sent to advertisers. Social media companies need to start working for the individual, their supposed core customer base if they want to stay away from public scrutiny and possible harsh legislation down the road.\n\n\n\n",
+      "last_modified": "2021-05-04T00:02:30-04:00"
+    },
+    {
+      "path": "sample4.html",
+      "title": "Data From Donor Spending in 2018",
+      "description": "An article explaining some of the key facts of the 2018 political donor\n",
+      "author": [
+        {
+          "name": "Benno Kass",
+          "url": {}
+        }
+      ],
+      "contents": "\nIn 2018, the Republicans out raised the Democrats by nearly twenty million dollars. The total number of contributions to Republicans was 43,515,565.57 while Democrats raised a mere 23,306,769.95 in comparison.\nMost of the donors came from California, New York, Florda and Texas. Those states account for nearly 44% of all donations going to both political parties. California has the highest concentration of Republican spending, coming from wealthy executives and Silicon Valley moguls such as Peter Thiel. CEO’s gave disproportionately to Republicans, with 79% of CEO political donations going to the RNC. Some interesting donor employers of republicans include MSG, the Tampa Bay Buccaneers, and Citadel Investment Group. While prominent democrat employers include Soros Fund Management, Renaissance Technologies and Schooner Capital.\n\n\n\n",
+      "last_modified": "2021-05-04T00:02:30-04:00"
+    },
+    {
+      "path": "sample5.html",
+      "title": "Former UN Ambassador Haley on her relationship with President Trump: “I challenged him…not in public but in private.”",
+      "description": "An article written in 2018 about Former UN Ambassador Haley with then President Trump\n",
+      "author": [
+        {
+          "name": "Benno Kass",
+          "url": {}
+        }
+      ],
+      "contents": "\nNikki Haley, former U.S. Ambassador to the United Nations, addressed her relationship with President Trump and the U.S. relationship with Israel, among other foreign policy matters, in a talk Tuesday, March 6, at Temple Emanu-El Synagogue in New York.\nHaley told an audience of more than three hundred people that she “challenged him…not in public but in private” during her two year tenure from early 2017 to the end of 2018. She did not specify the issues on which she challenged Trump. Haley did concede that she “made a point of not doing anything he would not want me to do.”\nHaley previously served as governor of South Carolina from 2011 until joining the Trump cabinet. She said that one of her conditions of taking the job was that Trump designate the role of U.S. ambassador to the U.N. as a cabinet-level position. Haley said that she told then President-elect Trump that she “won’t be a wallflower or a talking head.”\nIn describing her time as ambassador, she said “it was a great relationship” and “he did not micromanage me.”\nHaley made the remarks in conversation with the United Jewish Appeal (UJA) organization CEO Eric Goldstein. The audience included members of the UJA or congregants of Temple Emanu-El, a reform synagogue on Manhattans Upper East Side.\nBefore the talk head Rabbi Josh Davidson of Temple Emanu-El told us “the U.N. has been less than even-handed with its treatment of Israel.” Davidson’s congregation boasts many New York members from former Mayor Michael Bloomberg to the late Joan Rivers.\nHaley staunchly defended Israel during the talk, telling the audience “The United States failed our friend [Israel] when they needed us most.”\n“The United States didn’t just abstain, they led the charge on this…What does this say to the rest of the world when we do this to one of our friends.”\nShe was referring to the 2016 U.N. Security Council Resolution 2334 which claimed the Israeli settlements in the West Bank including East Jerusalem were a “flagrant violation of international law.” The United States chose to abstain from voting even though they have veto power on the committee.\nHaley gave insight on the upcoming peace plan created by White House adviser and son-in-law of the president Jared Kushner. She characterized it as “incredibly thought out and detailed” but that neither side will be entirely happy with what they see. “They will both have to give,” she warned.\nAmbassador Haley also spoke with candor about the October 2018 murder of Washington Post columnist Jamal Khashoggi at the hands of Saudi Arabian agents at the Saudi consulate in Istanbul, Turkey. “MBS is ultimately responsible for Khashoggi’s murder,” referring to the Crown Prince of Saudi Arabia, Mohammad Bin Salman.\nHaley said that while some believe the Trump administration did not hold the Saudis to account, “The United States put unbelievable pressure on Saudi Arabia behind closed doors.”\nWhen Haley spoke about her most significant achievement, she cited, “The three sanction packages against North Korea” and the “first ever arms embargo against South Sudan.”\nHaley had little criticism for her former boss, but did break with him perhaps by offering some blunt talk on Russia. “We will never be able to trust Russia, ever…they make friends with the countries no one wants to be friends with.”\n\n\n\n",
+      "last_modified": "2021-05-04T00:02:31-04:00"
+    },
+    {
+      "path": "sample6.html",
+      "title": "Audio Revolution: How the media landscape is transforming to audio",
+      "description": "An article written in 2018 The Rise of Podcasts \n",
+      "author": [
+        {
+          "name": "Benno Kass",
+          "url": {}
+        }
+      ],
+      "contents": "\nWhat is everybody listening to behind their earbuds? Chances are it is a podcast. Podcasts have become an alternative for listeners of audiobooks, music and the radio. There are fewer rules in the podcast world. Four-letter words can be frequent, and the subject matter can vary, from crime to news to just random conversations.\nOn GW’s campus, many students listen to podcasts, of the 85 students surveyed, 96 percent of them said that they listened to a podcast within the last month. Jacob Perrman, a Junior at GW at the School of Business, says that “in the last few years I’ve started listening to podcasts every day” and “I’ve ditched my cable subscription for free podcasts.” Podcasts are mainly free but receive their funding from sponsorships and advertisements. Fawaz Almudhaf, a sophomore in the Elliott School of International Affairs hails from Kuwait. He noticed that he really started listening to podcasts when he got interested in American politics saying “it’s a great tool to learn more” and “once coming to America I realized people listen to podcasts more and more.”\nGeorge Washington has not yet tapped into the growing podcast space except for the Integrative Medicine department in the School of Medicine and Health Sciences, which publishes podcasts with inquisitive minds. George Washington’s newspaper, The Hatchet, has a podcast titled “Getting to the Bottom of It” which features student journalists’ findings in audio form. Leah Potter, who runs the Hatchet podcast says “I think podcasts are a convenient and leisurely. You could be getting your news while walking to class, grocery shopping or going for a run. GW students especially are busy, and a podcast allows them to multitask while learning about the week’s top stories.”\nPotter also says “the podcast is an exciting opportunity for news reporters to think outside of the box when delivering content every week” and that they have “received positive feedback from students, alumni and family members.”\n“Getting to the Bottom of It” recent podcast featured culture editor Lindsay Paulen covering the surge in AirPods use at the university. Airpods, the $150 Apple wireless headphones have become widespread on Campus culture. Paulen was able to convey her journalism on an mp3, which is an audio file read by nearly any device, to commuters everywhere…even on Airpods.\nFor Apple users, the Apple Podcast app is their go-to platform with 52 percent of podcast listeners according to Anchor Media. Starting with The Ricky Gervais Show in 2005, Apple Podcast has amassed nearly 525,000 active shows, with the listeners to follow. In 2014, there were 7 billion podcast downloads. In March 2018, Apple Podcast passed 50 billion all-time episode downloads and streams.\nAcross the country, American’s are avid podcast listeners; Nielsen in 2017 estimated that half of American homes could be classified as “podcast fans.”\nPodcasts have increasing power in modern culture, and can even affect the market, as a recent incident with Tesla Chairman and CEO Elon Musk illustrates. Joe Rogan’s controversial podcast with space and electric car mogul, Elon Musk, reaped more than 20 million YouTube views alone. Musk and Rogan drank whiskey, spoke on an array of topics and smoked weed together. Investors sold Tesla Motors, Musk was the Chairman and CEO, to the tune of a 6 percent sell-off after Rogan’s podcast.\n\n\n\n",
+      "last_modified": "2021-05-04T00:02:31-04:00"
     },
     {
       "path": "skills.html",
       "title": "Skills",
-      "description": "A new article created using the Distill format.\n",
-      "author": [
-        {
-          "name": "Nora Jones",
-          "url": "https://example.com/norajones"
-        }
-      ],
-      "date": "`r Sys.Date()`",
-      "contents": "\nDistill is a publication format for scientific and technical writing, native to the web.\nLearn more about using Distill for R Markdown at https://rstudio.github.io/distill.\n\n\n\n",
-      "last_modified": "2021-05-02T11:49:04-04:00"
+      "description": "Below is a selection of my skills. \n",
+      "author": [],
+      "contents": "\nTechnical:\nMicrosoft Office Suite\nAdobe Suite\nGoogle Suite\nGoogle Analytics\nMicrosoft Office Suite\nWordPress\nMailchimp\nHTML\nCSS\nRStudio/RMarkdown\n General Skills:\nInformative Writing\nMemo’s\nPresentation Skills\nHardwork\n Interests:\nmedia\ntech\ncurrent events\ntravel\n\n\n\n",
+      "last_modified": "2021-05-04T00:02:32-04:00"
     }
   ],
   "collections": ["posts/posts.json"]

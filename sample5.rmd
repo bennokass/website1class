@@ -1,25 +1,42 @@
 ---
-title: "Untitled"
+title: "Former UN Ambassador Haley on her relationship with President Trump: “I challenged him…not in public but in private.”"
 description: |
-  A new article created using the Distill format.
+ An article written in 2018 about Former UN Ambassador Haley with then President Trump
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-date: "`r Sys.Date()`"
+  - name: Benno Kass
+    url: 
+    affiliation: GW
+    affiliation_url: 
+
 output: distill::distill_article
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+Nikki Haley, former U.S. Ambassador to the United Nations, addressed her relationship with President Trump and the U.S. relationship with Israel, among other foreign policy matters, in a talk Tuesday, March 6, at Temple Emanu-El Synagogue in New York.     
 
-Distill is a publication format for scientific and technical writing, native to the web. 
+Haley told an audience of more than three hundred people that she “challenged him…not in public but in private” during her two year tenure from early 2017 to the end of 2018. She did not specify the issues on which she challenged Trump. Haley did concede that she “made a point of not doing anything he would not want me to do.”
 
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+Haley previously served as governor of South Carolina from 2011 until joining the Trump cabinet. She said that one of her conditions of taking the job was that Trump designate the role of U.S. ambassador to the U.N. as a cabinet-level position. Haley said that she told then President-elect Trump that she “won’t be a wallflower or a talking head.”
 
+In describing her time as ambassador, she said “it was a great relationship” and “he did not micromanage me.”
 
+Haley made the remarks in conversation with the United Jewish Appeal (UJA) organization CEO Eric Goldstein. The audience included members of the UJA or congregants of Temple Emanu-El, a reform synagogue on Manhattans Upper East Side. 
 
+Before the talk head Rabbi Josh Davidson of Temple Emanu-El told us “the U.N. has been less than even-handed with its treatment of Israel.” Davidson’s congregation boasts many New York members from former Mayor Michael Bloomberg to the late Joan Rivers.
+ 
+Haley staunchly defended Israel during the talk, telling the audience “The United States failed our friend [Israel] when they needed us most.” 
 
+“The United States didn’t just abstain, they led the charge on this…What does this say to the rest of the world when we do this to one of our friends.”
+
+She was referring to the 2016 U.N. Security Council Resolution 2334 which claimed the Israeli settlements in the West Bank including East Jerusalem were a “flagrant violation of international law.” The United States chose to abstain from voting even though they have veto power on the committee.
+
+Haley gave insight on the upcoming peace plan created by White House adviser and son-in-law of the president Jared Kushner. She characterized it as “incredibly thought out and detailed” but that neither side will be entirely happy with what they see. “They will both have to give,” she warned.
+
+Ambassador Haley also spoke with candor about the October 2018 murder of Washington Post columnist Jamal Khashoggi at the hands of Saudi Arabian agents at the Saudi consulate in Istanbul, Turkey. “MBS is ultimately responsible for Khashoggi’s murder,” referring to the Crown Prince of Saudi Arabia, Mohammad Bin Salman.
+
+Haley said that while some believe the Trump administration did not hold the Saudis to account, “The United States put unbelievable pressure on Saudi Arabia behind closed doors.” 
+
+When Haley spoke about her most significant achievement, she cited, “The three sanction packages against North Korea” and the “first ever arms embargo against South Sudan.”
+
+Haley had little criticism for her former boss, but did break with him perhaps by offering some blunt talk on Russia. “We will never be able to trust Russia, ever...they make friends with the countries no one wants to be friends with.”
+ 
 

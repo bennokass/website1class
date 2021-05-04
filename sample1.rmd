@@ -1,23 +1,20 @@
 ---
-title: "Sample1"
+title: "Universal Basic Income for Dogs"
 description: |
-  A new article created using the Distill format.
+  A humorous editorial 
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-date: "`r Sys.Date()`"
+  - name: Benno Kass
+    url: 
+    affiliation: GW
+    affiliation_url: 
+
 output: distill::distill_article
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+Amid the current craze of stimulus checks, first implemented by former President Trump and carried through by current President Biden, our canine friends have been left out of the discussion. Why shouldn't these dog caregivers get the same respect and fiscal largess during these troubling times as their human counterparts? Shouldn't compassionate humans and our political leadership in Congress be able to squeeze out a billion dollars inside of the trillions of dollars of Covid support programs to support our canine heroes? A hundred dollars per month for each dog in the U.S. would provide for better food and healthcare until this Pandemic is over and would go a long way to showing the proper respect for these dogs' powerful roles in helping to maintain human mental health. Let's call it the "Bark Better Bill" and enact it as soon as possible. These funds could be distributed through Petco and Chewy in the form of credits available to each dog's owner, and this would ensure that this vital support program reaches its target—dogs rather than their owners. Dogs will bark with joy from the apartments of New York to the open skies of Montana once they are included in the "stimmy checks." 
 
-Distill is a publication format for scientific and technical writing, native to the web. 
+Please show us the money; during this bipartisan spending spree, our left-out furry friends are in need of new toys and extra scrumptious food. Budgets and fiscal responsibility clearly do not matter anymore to either party, and if we are going to take care of everyone, we should include our furry friends who do so much for us. 
 
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
 
 
 

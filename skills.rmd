@@ -1,23 +1,64 @@
 ---
 title: "Skills"
 description: |
-  A new article created using the Distill format.
-author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-date: "`r Sys.Date()`"
+  Below is a selection of my skills. 
+
 output: distill::distill_article
 ---
+
+<b>Technical:</b> 
+
+* Microsoft Office Suite
+
+* Adobe Suite 
+
+* Google Suite 
+
+* Google Analytics 
+
+* Microsoft Office Suite 
+
+* WordPress 
+
+* Mailchimp 
+
+* HTML 
+
+* CSS
+
+* RStudio/RMarkdown
+
+
+
+
+
+<b> General Skills:</b>
+
+* Informative Writing
+
+* Memo's
+
+* Presentation Skills
+
+* Hardwork
+
+
+
+
+<b> Interests:</b>
+
+* media
+
+* tech
+
+* current events
+
+* travel
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-Distill is a publication format for scientific and technical writing, native to the web. 
-
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
 
 
 

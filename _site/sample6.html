@@ -86,26 +86,30 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 </style>
 
   <!--radix_placeholder_meta_tags-->
-  <title>Benno's Website: website1</title>
+  <title>Benno's Website: Audio Revolution: How the media landscape is transforming to audio</title>
+
+  <meta property="description" itemprop="description" content="An article written in 2018 The Rise of Podcasts"/>
 
 
-
+  <meta name="article:author" content="Benno Kass"/>
 
   <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
-  <meta property="og:title" content="Benno&#39;s Website: website1"/>
+  <meta property="og:title" content="Benno&#39;s Website: Audio Revolution: How the media landscape is transforming to audio"/>
   <meta property="og:type" content="article"/>
+  <meta property="og:description" content="An article written in 2018 The Rise of Podcasts"/>
   <meta property="og:locale" content="en_US"/>
   <meta property="og:site_name" content="Benno&#39;s Website"/>
 
   <!--  https://dev.twitter.com/cards/types/summary -->
   <meta property="twitter:card" content="summary"/>
-  <meta property="twitter:title" content="Benno&#39;s Website: website1"/>
+  <meta property="twitter:title" content="Benno&#39;s Website: Audio Revolution: How the media landscape is transforming to audio"/>
+  <meta property="twitter:description" content="An article written in 2018 The Rise of Podcasts"/>
 
   <!--/radix_placeholder_meta_tags-->
   <!--radix_placeholder_rmarkdown_metadata-->
 
   <script type="text/json" id="radix-rmarkdown-metadata">
-  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","site","listing"]}},"value":[{"type":"character","attributes":{},"value":["website1"]},{"type":"character","attributes":{},"value":["distill::distill_website"]},{"type":"character","attributes":{},"value":["posts"]}]}
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description","author","output"]}},"value":[{"type":"character","attributes":{},"value":["Audio Revolution: How the media landscape is transforming to audio"]},{"type":"character","attributes":{},"value":["An article written in 2018 The Rise of Podcasts \n"]},{"type":"list","attributes":{},"value":[{"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["name","url","affiliation","affiliation_url"]}},"value":[{"type":"character","attributes":{},"value":["Benno Kass"]},{"type":"NULL"},{"type":"character","attributes":{},"value":["GW"]},{"type":"NULL"}]}]},{"type":"character","attributes":{},"value":["distill::distill_article"]}]}
   </script>
   <!--/radix_placeholder_rmarkdown_metadata-->
   <!--radix_placeholder_navigation_in_header-->
@@ -2045,12 +2049,12 @@ code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
 
 </head>
 
-<body class="layout-listing">
+<body>
 
 <!--radix_placeholder_front_matter-->
 
 <script id="distill-front-matter" type="text/json">
-{"title":"website1","authors":[]}
+{"title":"Audio Revolution: How the media landscape is transforming to audio","description":"An article written in 2018 The Rise of Podcasts","authors":[{"author":"Benno Kass","authorURL":"#","affiliation":"GW","affiliationURL":"#","orcidID":""}]}
 </script>
 
 <!--/radix_placeholder_front_matter-->
@@ -2088,209 +2092,29 @@ Work Samples
 <!--/radix_placeholder_navigation_before_body-->
 <!--radix_placeholder_site_before_body-->
 <!--/radix_placeholder_site_before_body-->
-<!--radix_placeholder_article_listing-->
-
-
-<script type="application/javascript">
-
-function init_posts_list() {
-
-  function load_image(img) {
-    var src = $(img).attr('data-src');
-    if (src) {
-      $(img).attr('src', src);
-      $(img).load(function() {
-        img.removeAttribute('data-src');
-      });
-    }
-  }
-
-  function set_posts_visible(posts, visible) {
-    if (visible) {
-
-      // show bottom border by default
-      $(posts).removeClass('post-preview-last');
-
-      // apply limits if need be
-      var max_posts = 25;
-      var apply_limits = $('.posts-container').hasClass('posts-apply-limit');
-      if (apply_limits && posts.length > max_posts) {
-        posts = $(posts).slice(0, max_posts);
-      } else {
-        $('.posts-more a').addClass('hidden');
-      }
-
-      // apply last style
-      $(posts.slice(-1)[0]).addClass('post-preview-last');
-
-      $(posts).removeClass('hidden');
-      $(posts).find('img[data-src]').each(function(i, img) {
-        load_image(img);
-      });
-    } else {
-      $(posts).addClass('hidden');
-    }
-  }
-
-  function apply_hash_filter() {
-
-    // clear active state
-    $('.categories .active').removeClass('active');
-
-    // mark all posts invisible to start
-    set_posts_visible($('.posts-list').children('a'), false);
-
-    // if we have a hash filter
-    if (window.location.hash && window.location.hash.startsWith("#category:")) {
-
-      // mark posts that match the category visible
-      var page_category = window.location.hash.replace(/^#category:/, "");
-      var posts = $('.post-metadata').map(function(idx, script) {
-        var metadata = $.parseJSON($(script).html());
-        var post = null;
-        $.each(metadata.categories, function(idx, category) {
-          category = category.replace(/ /g,"_");
-          if ((page_category || '').toLowerCase() === "articles" || category === page_category) {
-            post = $(script).parent().get();
-            return false;
-          }
-        });
-        return post;
-      });
-      set_posts_visible(posts, true);
-
-      // mark the hash active
-      $('.categories li>a[href="' + window.location.hash + '"]').addClass('active');
-
-      // update the list_caption
-      var list_caption = $('.posts-list-caption');
-      var caption = (page_category || '').toLowerCase() === "articles"
-        ? list_caption.attr('data-caption')
-        : ('Category: ' + page_category.replace(/_/g," "));
-      list_caption.text(caption);
-
-    } else {
-
-      // no hash filter, make all posts visible (subject to max display)
-      set_posts_visible($('.posts-list').children(), true);
-
-      // reset list caption
-      var list_caption = $('.posts-list-caption');
-      list_caption.text(list_caption.attr('data-caption'));
-
-
-    }
-  }
-
-  // more articles
-  function apply_post_limits(apply) {
-    if (apply) {
-      $('.posts-container').addClass('posts-apply-limit');
-      $('.posts-more a').removeClass('hidden');
-    } else {
-      $('.posts-container').removeClass('posts-apply-limit');
-      $('.posts-more a').addClass('hidden');
-    }
-  }
-
-  // click handling for tags
-  $('.dt-tag').click(function(ev) {
-    window.location.hash = '#category:' + $(this).text().replace(/ /g, "_");
-    return false;
-  })
-
-  // hash filter handling
-  apply_hash_filter();
-  $(window).on('hashchange',function() {
-    apply_post_limits(true);
-    apply_hash_filter();
-  });
-
-  // more articles link
-  $('.posts-more a').click(function(e) {
-    e.preventDefault();
-    apply_post_limits(false);
-    apply_hash_filter();
-    return false;
-  });
-
-}
-
-</script>
-
-
-
-<div class="posts-container posts-apply-limit l-page">
-<div class="posts-list">
-<h1 class="posts-list-caption" data-caption="website1">website1</h1>
-<a href="posts/2021-04-18-assignment1/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Benno Kass</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>assignment1</h2>
-<div class="dt-tags"></div>
-<p>A short description of the post.</p>
-</div>
-</a>
-<a href="posts/2021-04-18-assignment2/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Nora Jones</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>assignment2</h2>
-<div class="dt-tags"></div>
-<p>This is a run through my second assignment</p>
-</div>
-</a>
-<a href="posts/welcome/" class="post-preview">
-<script class="post-metadata" type="text/json">{"categories":[]}</script>
-<div class="metadata">
-<div class="publishedDate">April 18, 2021</div>
-<div class="dt-authors">
-<div class="dt-author">Nora Jones</div>
-</div>
-</div>
-<div class="thumbnail">
-<img/>
-</div>
-<div class="description">
-<h2>Welcome to website1</h2>
-<div class="dt-tags"></div>
-<p>Welcome to our new blog, website1. We hope you enjoy 
-reading what we have to say!</p>
-</div>
-</a>
-</div>
-<div class="posts-more">
-<a href="#">More articles &raquo;</a>
-</div>
-</div>
-<!--/radix_placeholder_article_listing-->
 
 <div class="d-title">
-<h1>website1</h1>
+<h1>Audio Revolution: How the media landscape is transforming to audio</h1>
 <!--radix_placeholder_categories-->
 <!--/radix_placeholder_categories-->
+<p><p>An article written in 2018 The Rise of Podcasts</p></p>
+</div>
+
+<div class="d-byline">
+  Benno Kass  (GW)
+  
 
 </div>
 
-
 <div class="d-article">
+<p>What is everybody listening to behind their earbuds? Chances are it is a podcast. Podcasts have become an alternative for listeners of audiobooks, music and the radio. There are fewer rules in the podcast world. Four-letter words can be frequent, and the subject matter can vary, from crime to news to just random conversations.</p>
+<p>On GW’s campus, many students listen to podcasts, of the 85 students surveyed, 96 percent of them said that they listened to a podcast within the last month. Jacob Perrman, a Junior at GW at the School of Business, says that “in the last few years I’ve started listening to podcasts every day” and “I’ve ditched my cable subscription for free podcasts.” Podcasts are mainly free but receive their funding from sponsorships and advertisements. Fawaz Almudhaf, a sophomore in the Elliott School of International Affairs hails from Kuwait. He noticed that he really started listening to podcasts when he got interested in American politics saying “it’s a great tool to learn more” and “once coming to America I realized people listen to podcasts more and more.”</p>
+<p>George Washington has not yet tapped into the growing podcast space except for the Integrative Medicine department in the School of Medicine and Health Sciences, which publishes podcasts with inquisitive minds. George Washington’s newspaper, The Hatchet, has a podcast titled “Getting to the Bottom of It” which features student journalists’ findings in audio form. Leah Potter, who runs the Hatchet podcast says “I think podcasts are a convenient and leisurely. You could be getting your news while walking to class, grocery shopping or going for a run. GW students especially are busy, and a podcast allows them to multitask while learning about the week’s top stories.”</p>
+<p>Potter also says “the podcast is an exciting opportunity for news reporters to think outside of the box when delivering content every week” and that they have “received positive feedback from students, alumni and family members.”</p>
+<p>“Getting to the Bottom of It” recent podcast featured culture editor Lindsay Paulen covering the surge in AirPods use at the university. Airpods, the $150 Apple wireless headphones have become widespread on Campus culture. Paulen was able to convey her journalism on an mp3, which is an audio file read by nearly any device, to commuters everywhere…even on Airpods.</p>
+<p>For Apple users, the Apple Podcast app is their go-to platform with 52 percent of podcast listeners according to Anchor Media. Starting with The Ricky Gervais Show in 2005, Apple Podcast has amassed nearly 525,000 active shows, with the listeners to follow. In 2014, there were 7 billion podcast downloads. In March 2018, Apple Podcast passed 50 billion all-time episode downloads and streams.</p>
+<p>Across the country, American’s are avid podcast listeners; Nielsen in 2017 estimated that half of American homes could be classified as “podcast fans.”</p>
+<p>Podcasts have increasing power in modern culture, and can even affect the market, as a recent incident with Tesla Chairman and CEO Elon Musk illustrates. Joe Rogan’s controversial podcast with space and electric car mogul, Elon Musk, reaped more than 20 million YouTube views alone. Musk and Rogan drank whiskey, spoke on an array of topics and smoked weed together. Investors sold Tesla Motors, Musk was the Chairman and CEO, to the tune of a 6 percent sell-off after Rogan’s podcast.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
 <!--radix_placeholder_article_footer-->
 <!--/radix_placeholder_article_footer-->

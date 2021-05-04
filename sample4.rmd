@@ -1,25 +1,28 @@
 ---
-title: "Untitled"
+title: "Data From Donor Spending in 2018"
 description: |
-  A new article created using the Distill format.
+ An article explaining some of the key facts of the 2018 political donor
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-date: "`r Sys.Date()`"
+  - name: Benno Kass
+    url: 
+    affiliation: GW
+    affiliation_url: 
+
 output: distill::distill_article
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
-Distill is a publication format for scientific and technical writing, native to the web. 
+In 2018, the Republicans out raised the Democrats by nearly twenty million dollars. The total
+number of contributions to Republicans was 43,515,565.57 while Democrats raised a mere
+23,306,769.95 in comparison.
 
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
-
-
-
+Most of the donors came from California, New York, Florda and Texas. Those states account for
+nearly 44% of all donations going to both political parties. California has the highest concentration
+of Republican spending, coming from wealthy executives and Silicon Valley moguls such as Peter
+Thiel.
+CEO’s gave disproportionately to Republicans, with 79% of CEO political donations going to the
+RNC. Some interesting donor employers of republicans include MSG, the Tampa Bay Buccaneers,
+and Citadel Investment Group. While prominent democrat employers include Soros Fund
+Management, Renaissance Technologies and Schooner Capital.
 
 

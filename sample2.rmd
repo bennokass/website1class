@@ -1,25 +1,31 @@
 ---
-title: "Untitled"
+title: "Midtown Shattered"
 description: |
-  A new article created using the Distill format.
+  A neighborhood under attack
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-date: "`r Sys.Date()`"
+  - name: Benno Kass
+    url: 
+    affiliation: GW
+    affiliation_url: 
+
 output: distill::distill_article
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
 
-Distill is a publication format for scientific and technical writing, native to the web. 
+The culture, in Midtown Manhattan, is on life support. Countless businesses have been forced to close their doors as Coronavirus forced lockdowns and social distancing regulations which crippled businesses in the City that Never Sleeps.
 
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+Midtown, is predominantly office buildings which are in large part shut down as things have not returned to a complete normal yet. When the Coronavirus arrived, restaurants like Gabriels Bar and Restaurant saw a nearly 90% decline in traffic. Reductions like these, make running a restaurant nearly impossible.
 
+One way restaurants were helped is by the PPP Loan program which granted fully refundable loans to businesses suffering from the pandemic. Restaurants, which did not close, have used those funds to keep open and continue to pay their workers.
 
+Gabriels Bar and Restaurant, located on Central Park South in New York City, took the time during the pandemic to renovate their location in order to be ready when businesses open back up. Gabriels has been open for over thirty years making it a favorite spot for businesspeople, actors/actresses, and New Yorkers alike. One big draw of Gabriels is the atmosphere, which has always been packed and filled with life. Instead of staying open during the pandemic, Gabriels has opted to reconstruct their restaurant, with some touches of our new normal, such as hand sanitizer stations throughout. Gabriels Co-Owner Gabe Aiello says that he believes the restaurant will be busier than ever once they open because people have a “pent up demand.”
 
+Gabriel’s is lucky, even though they had to close down during the last year so many restaurants in the neighborhood have been forced to close their doors. Restaurants that have closed for good are the 21 Club, Eisenberg’s, Esca, Ethos, Foley’s, Hakkasan, Jameson’s, Le Colonial, Rosa Mexicano, Monkey Bar. The 21 Club, for instance, opened its doors in 1922, weathering many storms from the Great Depression, to World War II, to 9/11. The COVID pandemic of 2020, however, the pandemic shut their doors just before their centennial.
+
+The longterm effects for the neighborhood are unknown. Some businesses have moved completely out of New York City such as Goldman Sacks, which is relocating to Florida. Also some workers have noted that working from home may be a longterm solution, as people become comfortable with working virtually from home.
+
+The future is looking better though, for the few restaurants and restauranteurs fortunate enough to still be in business. The COVID-19 vaccine is being rolled out throughout the world and will hopefully allow restaurants to open back up—even at full capacity. The vaccine rollout has been especially successful in New York City with a rate of nearly 40% fully vaccinated. The COVID Vaccine is a sign of normalcy, in an age where we desperately need it.
+
+When the pandemic is in the past, restaurants will thrive again and the city will be back—but not the same. The storied institutions that have closed or are heavily bruised will always be missed and remembered by New Yorkers and visitors alike.
 
 

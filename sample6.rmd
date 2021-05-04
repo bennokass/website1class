@@ -1,25 +1,30 @@
 ---
-title: "Untitled"
+title: "Audio Revolution: How the media landscape is transforming to audio"
 description: |
-  A new article created using the Distill format.
+ An article written in 2018 The Rise of Podcasts 
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-date: "`r Sys.Date()`"
+  - name: Benno Kass
+    url: 
+    affiliation: GW
+    affiliation_url: 
+
 output: distill::distill_article
 ---
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+What is everybody listening to behind their earbuds? Chances are it is a podcast. Podcasts have become an alternative for listeners of audiobooks, music and the radio. There are fewer rules in the podcast world. Four-letter words can be frequent, and the subject matter can vary, from crime to news to just random conversations. 
 
-Distill is a publication format for scientific and technical writing, native to the web. 
+On GW’s campus, many students listen to podcasts, of the 85 students surveyed, 96 percent of them said that they listened to a podcast within the last month. Jacob Perrman, a Junior at GW at the School of Business, says that “in the last few years I’ve started listening to podcasts every day” and “I’ve ditched my cable subscription for free podcasts.” Podcasts are mainly free but receive their funding from sponsorships and advertisements. Fawaz Almudhaf, a sophomore in the Elliott School of International Affairs hails from Kuwait. He noticed that he really started listening to podcasts when he got interested in American politics saying “it’s a great tool to learn more” and “once coming to America I realized people listen to podcasts more and more.” 
 
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
+George Washington has not yet tapped into the growing podcast space except for the Integrative Medicine department in the School of Medicine and Health Sciences, which publishes podcasts with inquisitive minds. George Washington’s newspaper, The Hatchet, has a podcast titled “Getting to the Bottom of It” which features student journalists’ findings in audio form. Leah Potter, who runs the Hatchet podcast says “I think podcasts are a convenient and leisurely. You could be getting your news while walking to class, grocery shopping or going for a run. GW students especially are busy, and a podcast allows them to multitask while learning about the week's top stories.”
 
-
+Potter also says “the podcast is an exciting opportunity for news reporters to think outside of the box when delivering content every week” and that they have “received positive feedback from students, alumni and family members.”
 
 
+“Getting to the Bottom of It” recent podcast featured culture editor Lindsay Paulen covering the surge in AirPods use at the university. Airpods, the $150 Apple wireless headphones have become widespread on Campus culture. Paulen was able to convey her journalism on an mp3, which is an audio file read by nearly any device, to commuters everywhere…even on Airpods.  
+
+For Apple users, the Apple Podcast app is their go-to platform with 52 percent of podcast listeners according to Anchor Media. Starting with The Ricky Gervais Show in 2005, Apple Podcast has amassed nearly 525,000 active shows, with the listeners to follow. In 2014, there were 7 billion podcast downloads. In March 2018, Apple Podcast passed 50 billion all-time episode downloads and streams.
+
+Across the country, American’s are avid podcast listeners; Nielsen in 2017 estimated that half of American homes could be classified as “podcast fans.” 
+
+Podcasts have increasing power in modern culture, and can even affect the market, as a recent incident with Tesla Chairman and CEO Elon Musk illustrates.  Joe Rogan’s controversial podcast with space and electric car mogul, Elon Musk, reaped more than 20 million YouTube views alone. Musk and Rogan drank whiskey, spoke on an array of topics and smoked weed together. Investors sold Tesla Motors, Musk was the Chairman and CEO, to the tune of a 6 percent sell-off after Rogan’s podcast. 
 

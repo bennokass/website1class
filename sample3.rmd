@@ -1,25 +1,42 @@
 ---
-title: "Untitled"
+title: "Social Media Password Editorial"
 description: |
-  A new article created using the Distill format.
+ An editorial about Password Sharing Legislation with Your Employer
 author:
-  - name: Nora Jones 
-    url: https://example.com/norajones
-    affiliation: Spacely Sprockets
-    affiliation_url: https://example.com/spacelysprokets
-date: "`r Sys.Date()`"
+  - name: Benno Kass
+    url: 
+    affiliation: GW
+    affiliation_url: 
+
 output: distill::distill_article
 ---
+Would you let your employer into your social media account? Some lawmakers are arguing that employers should not be able to demand passwords from employees. The new legislation, protecting social media users from intrusive employers, is sweeping state legislatures, with New York State next on the list. The law would prevent employers from asking applicants to divulge their social media passwords. We hope the governor will sign the bill.
 
-```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE)
-```
+The new legislation, which will be on Governor Andrew Cuomo's desk this year, is one of the first pieces of legislation tailored to the modern era.  
 
-Distill is a publication format for scientific and technical writing, native to the web. 
+People's most intimate details are not just in their homes; they now also live in the cloud. The digital passkey safeguarding those accounts should be sacred, and Americans should never feel compelled to share those with the government or their employer. 
 
-Learn more about using Distill for R Markdown at <https://rstudio.github.io/distill>.
-
+How would you respond if an employer asked for a copy of the keys to your apartment? You'd probably tell them to buzz off. This is essentially what's happening here. After an employee gives an employer their password, they can waltz in and out of their account without worry.  
 
 
+There is a reason security experts strongly urge people to keep their passwords to themselves. Your password could be connected to banks, email, and even your house webcam portals. 
 
+The sacred right of conducting personal affairs outside of the workplace is also special. Individuals' ability to have a line between work and home is also infringed when employers have social media passwords.  
+
+Some critics of employee social media password regulations say that it infringes on employers' rights to conduct due diligence on potential employees. Critics do not understand the individual's civil liberties, which should always come first when understanding the nuances of privacy, especially when the privacy at risk is as personal as your social media account. 
+
+Social media accounts harbor tons of information that's not just public. Many social media sites have entirely private messengers. Facebook even touts that its messenger "end-to-end encrypted," that is, if you aren't compelled to give your password up to your boss anytime soon. Social media users never thought anyone, nonetheless their potential employer, would read their private messages. 
+
+
+One might guess during this time that no one has the free speech granted by the first amendment if employers are actively snooping on social media accounts. Where should people talk if they don't want their boss to eavesdrop? Perhaps a dingy underground parking lot or a desolate island without cell reception. Americans need lawmakers to extend the spirit of the first amendment to social media privacy because it our most recent speech mechanism.  
+
+COVID-19 has sheltered the entire world in their homes during the last year, which has virtually shifted almost all conversations. Your work meeting, workout, kids class, and even religious service were likely virtual. The biggest virtual portals where individuals congregate online are mostly controlled by a handful of big companies, including Google, Facebook, and Twitter. This consolidation makes it even more problematic for an individual to give up their password to an employer because it is their digital identity (which, by the way, is pretty much all we have these days). 
+
+Imagine giving an employer access to an employee's Zoom account. Employers would have access and could eavesdrop on personal religious confessionals and therapy sessions. 
+
+Individuals have placed their future in the hands of their social media accounts, and they might not even know it. People never knew in their previous use of social media that their account could be rummaged through by anyone. Those accounts' contents should only be responsible to the account holder, just as with a bank account or apartment building.
+
+The New York legislation is coming nearly eight years after California first passed the groundbreaking law. The proposed legislation protects New York employees and students from ever being forced to give their passwords up again. The passage of this legislation would do a great deal to help social media users' privacy rights, but there is more work to be done. 
+
+Social media sites often sell users' private data to advertisers, albeit anonymously, which can sometimes infringe on the user's rights. Some users have reported that they unknowingly were sharing their location services with the social media companies, which was then being sent to advertisers. Social media companies need to start working for the individual, their supposed core customer base if they want to stay away from public scrutiny and possible harsh legislation down the road.
 

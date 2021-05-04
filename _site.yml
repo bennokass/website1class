@@ -1,7 +1,7 @@
 name: "."
-title: "website1"
+title: "Benno's Website"
 description: |
-  website1
+  Benno's Website
 output_dir: "_site"
 navbar:
   right:
@@ -13,6 +13,16 @@ navbar:
       menu: 
         - text: "sample #1"
           href: sample1.html
+        - text: "sample #2"
+          href: sample2.html
+        - text: "sample #3"
+          href: sample3.html
+        - text: "sample #4"
+          href: sample4.html
+        - text: "sample #5"
+          href: sample5.html
+        - text: "sample #6"
+          href: sample6.html
     - text: "Experience"
       href: Resume.html
     - text: "Skills"
